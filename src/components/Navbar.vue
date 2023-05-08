@@ -96,65 +96,6 @@
       </div>
     </nav>
   </header>
-
-  <!-- Jumbotron -->
-  <div class="wrapper-jumbo w-full h-screen flex items-center">
-    <div
-      class="jumbo max-w-[85%] mx-auto flex items-center flex-col lg:flex-row"
-    >
-      <div class="jumbo-text order-2 lg:order-1">
-        <section class="bg-white">
-          <div class="py-8 lg:py-16">
-            <h1
-              class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
-            >
-              Marriage and Relationship Coaching
-            </h1>
-            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              consectetur justo quis euismod vehicula. Quisque diam dui,
-              imperdiet et hendrerit in, accumsan tempus erat.
-            </p>
-            <div class="">
-              <a
-                href="#"
-                class="inline-flex justify-center items-center py-3 w-[157px] px-5 text-base font-medium text-center text-white rounded-[20px] bg-secondaryColor"
-              >
-                Book Now
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="jumbo-img lg:w-[80rem] order-1 lg:order-2 relative">
-        <img
-          class="h-full w-[80rem]"
-          src="/img/jumbo-index.png"
-          alt=""
-          srcset=""
-        />
-        <div
-          class="flex items-center bg-white border font-bold shadow-lg rounded-xl p-4 md:p-5 absolute bottom-0"
-        >
-          <div class="circular">
-            <div class="inner"></div>
-            <div class="number text-primaryColor font-bold text-lg">90%</div>
-            <div class="circle">
-              <div class="bar left">
-                <div class="progress"></div>
-              </div>
-              <div class="bar right">
-                <div class="progress"></div>
-              </div>
-            </div>
-          </div>
-          <div class="progress-text w-auto pr-5">
-            <p class="ml-3 text-primaryColor w-10 pr-10">Success Results</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script setup></script>
@@ -206,7 +147,7 @@
 
 .circle .left .progress {
   z-index: 1;
-  animation: left 500ms linear both;
+  animation: left 800ms linear both;
 }
 
 @keyframes left {
@@ -221,8 +162,8 @@
 }
 
 .circle .right .progress {
-  animation: right 500ms linear both;
-  animation-delay: 500ms;
+  animation: right 800ms linear both;
+  animation-delay: 800ms;
 }
 
 @keyframes right {
