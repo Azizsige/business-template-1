@@ -2,18 +2,18 @@
   <div>
     <!-- Jumbotron -->
     <div
-      class="wrapper-jumbo w-full h-screen flex items-center"
+      class="flex items-center w-full h-screen wrapper-jumbo"
       v-motion-pop
       :delay="200"
     >
       <div
-        class="jumbo max-w-[85%] mx-auto flex items-center flex-col lg:flex-row"
+        class="jumbo max-w-[85%] lg:max-w-[94%] xl:max-w-[85%] mx-auto flex items-center flex-col lg:flex-row"
       >
-        <div class="jumbo-text order-2 lg:order-1">
+        <div class="order-2 jumbo-text lg:order-1">
           <section class="bg-white">
             <div class="py-8 lg:py-16">
               <h1
-                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
+                class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
               >
                 {{ title }}
               </h1>
@@ -32,16 +32,21 @@
           </section>
         </div>
         <div class="jumbo-img lg:w-[80rem] order-1 lg:order-2 relative">
-          <img class="h-full w-[80rem]" :src="image" alt="" srcset="" />
+          <img
+            class="h-full w-[80rem] sm:w-[30rem] xl:w-[80rem]"
+            :src="image"
+            alt=""
+            srcset=""
+          />
           <div
             v-if="precentange"
             v-motion-pop
             :delay="800"
-            class="flex items-center bg-white border font-bold shadow-lg rounded-xl p-4 md:p-5 absolute bottom-0"
+            class="absolute bottom-0 flex items-center p-4 font-bold bg-white border shadow-lg rounded-xl md:p-5"
           >
             <div class="circular">
               <div class="inner"></div>
-              <div class="number text-primaryColor font-bold text-lg">90%</div>
+              <div class="text-lg font-bold number text-primaryColor">90%</div>
               <div class="circle">
                 <div class="bar left">
                   <div class="progress"></div>
@@ -51,19 +56,19 @@
                 </div>
               </div>
             </div>
-            <div class="progress-text w-auto pr-5">
-              <p class="ml-3 text-primaryColor w-10 pr-10">Success Results</p>
+            <div class="w-auto pr-5 progress-text">
+              <p class="w-10 pr-10 ml-3 text-primaryColor">Success Results</p>
             </div>
           </div>
           <div
             v-else
             v-motion-pop
             :delay="800"
-            class="flex none items-center bg-white border font-bold shadow-lg rounded-xl p-4 md:p-5 absolute bottom-0"
+            class="absolute bottom-0 items-center hidden p-4 font-bold bg-white border shadow-lg lg:flex none rounded-xl md:p-5"
           >
             <div class="circular">
               <div class="inner"></div>
-              <div class="number text-primaryColor font-bold text-lg">90%</div>
+              <div class="text-lg font-bold number text-primaryColor">90%</div>
               <div class="circle">
                 <div class="bar left">
                   <div class="progress"></div>
@@ -73,8 +78,8 @@
                 </div>
               </div>
             </div>
-            <div class="progress-text w-auto pr-5">
-              <p class="ml-3 text-primaryColor w-10 pr-10">Success Results</p>
+            <div class="w-auto pr-5 progress-text">
+              <p class="w-10 pr-10 ml-3 text-primaryColor">Success Results</p>
             </div>
           </div>
         </div>

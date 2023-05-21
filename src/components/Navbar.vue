@@ -1,25 +1,25 @@
 <template>
   <header
-    class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-8"
+    class="relative z-50 flex flex-wrap w-full py-8 text-sm bg-white shadow-sm lg:justify-start lg:flex-nowrap"
   >
     <nav
-      class="max-w-[85rem] lg:max-w-[85%] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+      class="max-w-[85rem] lg:max-w-[97%] xl:max-w-[85%] w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between"
       aria-label="Global"
     >
       <div class="flex items-center justify-between">
         <a class="flex-none text-xl font-semibold" href="#"
           >Your Name Company</a
         >
-        <div class="sm:hidden">
+        <div class="lg:hidden">
           <button
             type="button"
-            class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondaryColor focus:ring-secondaryColor transition-all text-sm"
+            class="inline-flex items-center justify-center gap-2 p-2 text-sm font-medium text-gray-700 align-middle transition-all bg-white border rounded-md shadow-sm hs-collapse-toggle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondaryColor focus:ring-secondaryColor"
             data-hs-collapse="#navbar-with-mega-menu"
             aria-controls="navbar-with-mega-menu"
             aria-label="Toggle navigation"
           >
             <svg
-              class="hs-collapse-open:hidden w-4 h-4 text-secondaryColor"
+              class="w-4 h-4 hs-collapse-open:hidden text-secondaryColor"
               width="24"
               height="24"
               fill="currentColor"
@@ -31,7 +31,7 @@
               />
             </svg>
             <svg
-              class="hs-collapse-open:block hidden w-4 h-4 text-secondaryColor"
+              class="hidden w-4 h-4 hs-collapse-open:block text-secondaryColor"
               width="24"
               height="24"
               fill="currentColor"
@@ -46,10 +46,10 @@
       </div>
       <div
         id="navbar-with-mega-menu"
-        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+        class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow lg:block"
       >
         <div
-          class="flex flex-col gap-12 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5"
+          class="flex flex-col gap-12 mt-5 lg:gap-8 xl:gap-12 lg:flex-row lg:items-center lg:justify-end lg:mt-0 lg:pl-5"
         >
           <router-link
             aria-current="page"
