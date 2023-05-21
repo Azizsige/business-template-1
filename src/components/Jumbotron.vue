@@ -42,7 +42,7 @@
             v-if="precentange"
             v-motion-pop
             :delay="800"
-            class="absolute bottom-0 flex items-center p-4 font-bold bg-white border shadow-lg rounded-xl md:p-5"
+            class="absolute bottom-0 items-center hidden p-4 font-bold bg-white border shadow-lg lg:flex rounded-xl md:p-5"
           >
             <div class="circular">
               <div class="inner"></div>
