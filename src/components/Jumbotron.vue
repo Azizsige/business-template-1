@@ -2,7 +2,7 @@
   <div>
     <!-- Jumbotron -->
     <div
-      class="flex items-center w-full h-screen wrapper-jumbo"
+      class="flex items-center w-full min-h-[90vh] pt-10 lg:pt-0 h-max lg:h-screen wrapper-jumbo"
       v-motion-pop
       :delay="200"
     >
